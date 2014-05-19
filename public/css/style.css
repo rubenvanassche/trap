@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(../fonts/RJMlAoFXXQEzZoMSUteGWLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(../fonts/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(../fonts/JbtMzqLaYbbbCL9X6EvaI73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+body, h3{
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+
+#header{
+	background-image: url("../img/dark_dotted2.png");
+	background-size: cover;
+	width: 500px;
+	top: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 80px;
+	position: fixed;
+	z-index: 2;
+}
+
+#header #title{
+	color: white;
+	font-size: 40px;
+}
+
+#header #divider{
+	font-weight: 900;
+}
+
+#header #title #sectiontitle{
+	color: #FF851B;
+}
+
+#header #title i{
+	font-size: 25px;
+	margin-left: -6px;
+	color: #FF851B;
+}
+
+#headerskewed {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 20px;
+    -webkit-transform: skew(20deg);
+       -moz-transform: skew(20deg);
+         -o-transform: skew(20deg);
+    background-image: url("../img/dark_dotted2.png");
+    position: fixed;
+    top:40px;
+    left:420px;
+    z-index: 1;
+}
+
+/* DropMenu */
+#dropmenu a{
+	color: black;
+	text-align: center;
+}
+
+#dropmenu #startlink{
+	color: #FF851B;
+}
+
+#dropmenu #updateslink{
+	color: #85144B;
+}
+
+#dropmenu #infolink{
+	color: #0074D9;
+}
+
+#dropmenu #helplink{
+	color: #2ECC40;
+}
+
+#dropmenu #mercilink{
+	color: #FF4136;
+}
+
+/* Buttons */
+.btn-danger{
+	background-color: #FF4136;
+}
+
+.btn{
+	border-radius: 1px;
+}
+
+/* Thumbnails */
+.thumbnail .caption{
+	color: black;
+}
+
+.thumbnail .caption a{
+	color: black;
+}
+
+.thumbnail{
+	border-radius: 1px;
+}
+
+/* Carousel */
+.carousel-control.right,.carousel-control.left {
+	background-image: none;
+	color: black;
+}
+#carousel{
+	margin-top: 50px;
+	height: 350px;
+}
+
+
+#carousel .item .date{
+	text-align: center;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+#carousel .item .content{
+	text-align: center;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+/* status */
+#status{
+	margin-top: 100px;	
+	margin-bottom: 100px;
+}
+
+#status #funded{
+	font-weight: 900;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 10px;
+	color: black;
+}
+
+#statusbar {
+  border: solid 6px black;
+}
+
+#statusbar > div {
+   background-color: black;
+   width: 20%; /* Adjust with JavaScript */
+   height: 60px;
+}
+
+
+/* Home */
+#home{
+	background-image: url("../img/vzw.png");
+	background-size: cover;
+	padding-top: 130px;
+	padding-bottom: 20px;
+}
+#home #title{
+	color: black;
+	font-size: 50px;
+	margin: auto;
+	text-align: center;
+}
+
+#home #subtitle{
+	color: black;
+	text-align: center;
+	font-size: 20px;
+}
+
+#home #poster{
+	text-align: center;
+}
+
+#home #poster img{
+	height: 450px;
+}
+
+/* updates */
+#updates{
+	background-image: url("../img/cream_dust.png");
+}
+
+#updates .timeline-panel{
+	background-color: white;
+}
+
+/* Info */
+#info{
+	background-image: url("../img/blueprint-3.jpg");
+}
+
+#info #text{
+	background-color: rgba(0,0,0,0.75);
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#info #text p{
+	font-size: 18px;
+}
+
+#info .thumbnail{
+	margin-top: 20px;
+}
+
+/* Help */
+#help{
+	background-image: url("../img/cream_dust.png");
+}
+
+#help #bouwerstitle{
+	text-align: center;
+}
+
+#help .bouwers .col-sm-10{
+	padding-top: 35px;
+}
+
+#help .bouwers .col-sm-10 .title{
+	font-weight: 900;
+}
+
+#help .bouwers .col-sm-2{
+	font-size: 100px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.61);
+}
+
+#help .bouwers#gouden .col-sm-2{
+	color:#FFDC00;
+}
+
+#help .bouwers#zilveren .col-sm-2{
+	color:#DDDDDD;
+}
+
+#help .bouwers#bronzen .col-sm-2{
+	color:#852d14;
+}
+
+#help .buyoption span{
+	font-weight: 900;
+	margin-top: 10px;
+}
+
+#help .buytext{
+	font-size: 18px;
+}
+
+/* Merci */
+#merci{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(255,53,53,1);
+}
+
+#merci #heart{
+	text-align: center;
+	color: white;
+	font-size: 100px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+#merci #sponsors{
+	color: white;
+}
+
+/* Privacy */
+#privacy{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.2);
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+#privacy a{
+	color: black;
+	font-size: 10px;
+}
+
+/* Sponsors */
+.sponsor{
+	height: 100px;
+	margin-left: 10px;
+}
+
+#sponsorlogos{
+	background-image: none;
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	#headerskewed{
+		display: none;
+	}
+	
+	#header{
+		top:0px;
+		height: 50px;
+	}
+	
+	#header #title{
+		font-size: 25px;
+	}
+	
+	#header #title i{
+		font-size: 16px;
+	}
+	
+}

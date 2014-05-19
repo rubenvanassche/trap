@@ -1,0 +1,180 @@
+1400045632s:7356:"<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2072 VZW Project</title>
+
+	<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='css/jquery.fullPage.css' rel='stylesheet' type='text/css'>
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script> -->
+	
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+	
+	<script>
+	$(document).ready(function() {
+   	 $.fn.fullpage({
+	   	  navigation: false,
+	   	  anchors:['headlink', 'infolink','helplink', 'mercilink'],
+	   	  scrollingSpeed: 500,
+   	 });
+   	 
+   	 $('.popy').popover({'html':'true'});
+    });
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<ul id="leftmenu" class="menu">
+						<li data-menuanchor="head"><a href="#headlink">Start</a></li>
+						<li data-menuanchor="info"><a href="#infolink">Informatie</a></li>
+					</ul>
+				</div>
+				<div  id="organisation" class="col-md-4">
+					<p>2072 VZW Project</p>
+				</div>
+				<div class="col-md-4">
+					<ul id="rightmenu" class="menu">
+						<li data-menuanchor="help"><a href="#helplink">Help Ons</a></li>
+						<li data-menuanchor="merci"><a href="#mercilink">Merci</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="privacy">
+		<a href="http://www.scouts-zurenborg.be/trap/public/privacy">Privacyovereenkomst</a>
+	</div>
+	<div class="section active" id="head">
+		<div class="headtitle"><p>Den 20&#45;72 stapt op</p>
+</div>
+		<div class="subtitle"><p>Scouts Zurenborg heeft &#40;ver&#41;bouwplannen ...</p>
+</div>
+	</div>
+	<div class="section" id="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Informatie</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9">
+					<div id="content">
+						<p>Een lokaal verbouwen, zelfs zo klein als dat van ons, kost handenvol geld. We kunnen rekenen op de jarenlange spaarzaamheid van de scouts en subsidies van de Stad Antwerpen. Dit is echter niet genoeg om alle werken uit te voeren.</p>
+
+<p>Help ons het lokaal te verbeteren en steun ons door een steen of trede te kopen.</p>
+
+<p>Na een negatieve controle moeten we dringend werk maken om in orde te zijn met de nieuwe regels voor brandveiligheid. Enkele kleinere werken als het ophangen van noodverlichting en pictogrammen, zijn al gebeurd.</p>
+
+<p>Nu dringen zich echter grotere werken op, met als eerste punt: een nieuwe trap. Hiernaast vindt u de plannen van deze eerste belangrijke werken. Op deze website kan u de werken volgen aan de hand van foto's, video's en tekeningen.</p>
+
+<p>Heeft u vragen of opmerkingen, aarzel niet om ons te mailen:</p>
+
+<p><a href="mailto:vzw@scouts&#45;zurenborg.be">vzw@scouts&#45;zurenborg.be</a></p>
+					</div>
+				</div>
+				
+				<div class="col-md-3" id="plans">
+					<div class="picture">
+						<img src="img/VZW/plan2.png" />
+						<p>Grondplan <a href="img/VZW/plan2.png"><i class="glyphicon glyphicon-zoom-in pull-right"></i></a></p>
+					</div>
+					<div class="picture">
+						<img src="img/VZW/plan1.png" />
+						<p>Eerste verdieping <a href="img/VZW/plan1.png"><i class="glyphicon glyphicon-zoom-in pull-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="help">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Help Ons</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="buyoption">
+						<p class="title">Koop een steen<span class="pull-right">€25</span></p>
+						<div class="content">
+							<p>We verkopen onze bakstenen aan 25 euro per stuk. U kan hiervan zo veel kopen als u wenst.
+Na 2072 bakstenen, zorgen we voor een grote verrassing voor al onze sponsors.</p>
+
+<p>Wenst u 1 steen te kopen of ineens 50, elke gift is welkom!</p>
+						</div>
+						<p class="avaible">Reeds 43 verkocht van de 2072</p>
+					</div>
+				</div>
+				<div class="col-md-4" id="bouwers">
+					<img src="img/gouden.png" class="popy" data-container="body" data-toggle="popover" data-placement="right" data-content="<p>Gouden bouwer: U koopt voor minstens 1000 euro bakstenen. In ruil hiervoor wordt uw naam of logo gegraveerd in een plaat die we aan de ingang van de trap hangen tijdens de openingsreceptie.</p>
+" /><br />
+					<img src="img/zilveren.png" class="popy" data-container="body" data-toggle="popover" data-placement="right" data-content="<p>Zilveren bouwer: U koopt voor minstens 300 euro bakstenen als bedrijf. In ruil hiervoor wordt uw logo op onze website gezet.</p>
+" /><br />
+					<img src="img/bronzen.png" class="popy" data-container="body" data-toggle="popover" data-placement="right" data-content="<p>Bronzen bouwer: U koopt minstens een trede of voor 150 euro bakstenen. In ruil hiervoor wordt u uitgenodigd op de openingsreceptie.</p>
+" /><br />
+				</div>
+				<div class="col-md-4">
+					<div class="buyoption">
+						<p class="title">Koop een trede <span class="pull-right">€150</span></p>
+						<div class="content">
+							<p>De brandtrap zal uit 41 treden bestaan. Het zou mooi zijn als we deze volledig met uw steun kunnen zetten. Alle treden worden verkocht aan 150 euro. Hiervan kan u er slechts één per emailadres kopen.</p>
+
+<p>Door de aankoop van een trede bent u automatisch één van onze Zilveren Bouwers.</p>
+						</div>
+						<p class="avaible">Reeds 7 verkocht van de 41</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="order">
+						<p><a href="http://www.scouts-zurenborg.be/trap/public/order">Bestel Nu!</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="merci">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2><i class="glyphicon glyphicon-heart"> </i></h2>
+					<h3>Sponsors</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="sponsorlogos">
+			<div class="row">
+				<div class="col-md-12">
+					<p>ddd</p>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-top:10px; font-size:12px;">
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+																																							Ardennen Merckx,
+																																																															Ward Janssens & Magda Morel,
+																																																															Fam. Janssens-Meynants,
+																																																															Georges de Bruijne,
+																																																																																											Rit en Kris Lembrechts- Van Kersschaever,
+																																																																																																																																																																																																																																																																																</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>";
