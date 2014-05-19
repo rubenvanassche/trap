@@ -1,13 +1,18 @@
+	function scrollTo(section){
+		$('html, body').animate({scrollTop:$(section).offset().top}, 'slow');
+		document.location.hash = section;
+	}
+
 $(document).ready(function(){
 	//var windowHeight = $(window).height();
-	$('#header #title i').popover({'content':'<span id="dropmenu"><span id="startlink">Start</span><br/><span id="updateslink">Updates</span><br /><span id="infolink">Informatie</span><br /><span id="helplink">Help Ons</span><br /><span id="mercilink">Merci</a></li></ul></span>', 'placement':'bottom', 'html':true});
+	$('#header #title i').popover({'content':'<span id="dropmenu"><span id="startlink">Start</span><br/><span id="updateslink">Updates</span><br /><span id="infolink">Informatie</span><br /><span id="helplink">Help Ons</span><br /><span id="mercilink">Merci</a></span>', 'placement':'bottom', 'html':true});
 	//$('#home').css('height', windowHeight+'px');
 	
 	$("span.datum").text(function(){
 		return $.timeago($(this).text());
 	});
 	
-	function changeMenuTitle(title){
+	function changeMenuTitle(titleNew, titleOld){
 		var titles = Array();
 		titles['Start'] = '#FF851B';
 		titles['Updates'] = '#85144B';
@@ -15,17 +20,19 @@ $(document).ready(function(){
 		titles['Help Ons'] = '#2ECC40';
 		titles['Merci'] = '#FF4136';
 		
-		$('#header #title #sectiontitle').html(title);
-		$('#header #title #sectiontitle').css('color', titles[title]);
-		$('#header #title i').css('color', titles[title]);
-	}
-	
-	function scrollTo(section){
-		$('html, body').animate({scrollTop:$(section).offset().top}, 'slow');
+		var selectors = Array();
+		selectors['Start'] = 'startlink';
+		selectors['Updates'] = 'updateslink';
+		selectors['Informatie'] = 'infolink';
+		selectors['Help Ons'] = 'helplink';
+		selectors['Merci'] = 'mercilink';
+		
+		$("#menu ul li#"+selectors[titleNew]).addClass('active');
+		$("#menu ul li#"+selectors[titleOld]).removeClass('active');
 	}
 	
 	$('#home').waypoint(function(direction) {
-	  changeMenuTitle('Start')
+	  changeMenuTitle('Start', '')
 	});
 	
 	$("span#infolink").click(function(e){
@@ -34,33 +41,33 @@ $(document).ready(function(){
 	
 	$('#updates').waypoint(function(direction) {
 		if(direction == 'down'){
-			changeMenuTitle('Updates');
+			changeMenuTitle('Updates','Start');
 		}else{
-			changeMenuTitle('Start');
+			changeMenuTitle('Start','Updates');
 		}
 	},{'offset':'40'});
 	
 	$('#info').waypoint(function(direction) {
 		if(direction == 'down'){
-			changeMenuTitle('Informatie')
+			changeMenuTitle('Informatie','Updates')
 		}else{
-			changeMenuTitle('Updates')
+			changeMenuTitle('Updates','Informatie')
 		}
 	},{'offset':'40'});
 	
 	$('#help').waypoint(function(direction) {
 		if(direction == 'down'){
-			changeMenuTitle('Help Ons')
+			changeMenuTitle('Help Ons','Informatie')
 		}else{
-			changeMenuTitle('Informatie')
+			changeMenuTitle('Informatie','Help Ons')
 		}
 	},{'offset':'40'});
 	
 	$('#merci').waypoint(function(direction) {
 		if(direction == 'down'){
-			changeMenuTitle('Merci')
+			changeMenuTitle('Merci','Help Ons')
 		}else{
-			changeMenuTitle('Help Ons')
+			changeMenuTitle('Help Ons','Merci')
 		}
 	},{'offset':'40'});
 });

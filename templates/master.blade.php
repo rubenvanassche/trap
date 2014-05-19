@@ -13,7 +13,16 @@
 
 <body>
 	<div id="header">
-		<div id="title">{{Orderer::name()}} <span id="divider">:</span> <span id="sectiontitle">Start</span> <i class="glyphicon glyphicon-chevron-down"></i></div>
+		<div id="title">{{Orderer::name()}}</div>
+		<div id="menu">
+			<ul>
+				<li onclick="javascript:scrollTo('#home');" id="startlink">Start</li>
+				<li onclick="javascript:scrollTo('#updates');" id="updateslink">Updates</li>
+				<li onclick="javascript:scrollTo('#info');" id="infolink">Informatie</li>
+				<li onclick="javascript:scrollTo('#help');" id="helplink">Help Ons</li>
+				<li onclick="javascript:scrollTo('#merci');" id="mercilink">Merci</li>
+			</ul>
+		</div>
 	</div>
 	<div id="headerskewed"></div>
 	<div id="home">

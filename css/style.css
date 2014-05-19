@@ -25,11 +25,11 @@ body, h3{
 #header{
 	background-image: url("../img/dark_dotted2.png");
 	background-size: cover;
-	width: 500px;
+	width: 350px;
 	top: 40px;
 	padding: 10px;
 	box-sizing: border-box;
-	height: 80px;
+	height: 100px;
 	position: fixed;
 	z-index: 2;
 }
@@ -55,7 +55,7 @@ body, h3{
 
 #headerskewed {
     width: 80px;
-    height: 80px;
+    height: 100px;
     margin: 0 0 0 20px;
     -webkit-transform: skew(20deg);
        -moz-transform: skew(20deg);
@@ -63,8 +63,64 @@ body, h3{
     background-image: url("../img/dark_dotted2.png");
     position: fixed;
     top:40px;
-    left:420px;
+    left:280px;
     z-index: 1;
+}
+
+/* Menu */
+#menu{
+	margin-top: -10px;
+}
+
+#menu ul{
+	padding-left: 0px;
+}
+
+#menu ul li{
+	float: left;
+	list-style-type: none;
+	margin-right: 10px;
+	font-weight: 900;
+}
+
+#menu ul li#startlink{
+	color: #FF851B;
+}
+
+#menu ul li.active#startlink{
+	border-bottom: 2px solid #FF851B;
+}
+
+#menu ul li#updateslink{
+	color: #85144B;
+}
+
+#menu ul li.active#updateslink{
+	border-bottom: 2px solid #85144B;
+}
+
+#menu ul li#infolink{
+	color: #0074D9;
+}
+
+#menu ul li.active#infolink{
+	border-bottom: 2px solid #0074D9;
+}
+
+#menu ul li#helplink{
+	color: #2ECC40;
+}
+
+#menu ul li.active#helplink{
+	border-bottom: 2px solid #2ECC40;
+}
+
+#menu ul li#mercilink{
+	color: #FF4136;
+}
+
+#menu ul li.active#mercilink{
+	border-bottom: 2px solid #FF4136;
 }
 
 /* DropMenu */
@@ -317,7 +373,8 @@ body, h3{
 	
 	#header{
 		top:0px;
-		height: 50px;
+		height: 80px;
+		width: 100%;
 	}
 	
 	#header #title{
