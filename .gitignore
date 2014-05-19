@@ -1,4 +1,3 @@
 orderer/vendor
 orderer/artisan
 orderer/composer.lock
-orderer/app/config/database.php
