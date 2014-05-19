@@ -54,12 +54,6 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			/*
-			'host'      => 'localhost',
-			'database'  => 's12500sc_trap',
-			'username'  => 's12500sc_website',
-			'password'  => 'pyongyang',
-			*/
 			'host'      => 'localhost',
 			'database'  => 'trap',
 			'username'  => 'root',
