@@ -3,7 +3,7 @@ class TracesController extends BaseController {
 	protected $layout = "layouts.master";
 	
 	public function __construct() {
-	    $this->beforeFilter('csrf', array('on'=>'post'));
+	    $this->beforeFilter('auth');
 	}
 	
 	public function getIndex(){
